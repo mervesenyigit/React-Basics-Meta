@@ -28,3 +28,55 @@ body {
   background-color: black;
   color: white;
 }
+/* Modal'ın arka planını ve görünümünü ayarlıyoruz */
+/* Modal'ın arka planını ve görünümünü ayarlıyoruz */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Arka planın opaklığı */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Modal'ı en üstte göster */
+  opacity: 0; /* Başlangıçta görünmez */
+  pointer-events: none; /* Başlangıçta tıklanamaz */
+  transition: opacity 0.3s ease; /* Geçiş efekti */
+}
+
+/* Modal açıldığında */
+.modal-backdrop.show {
+  opacity: 1; /* Görünür hale gelir */
+  pointer-events: auto; /* Tıklanabilir olur */
+}
+
+/* Modal içeriği */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ekranın ortasına yerleştir */
+  background-color: white;
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Gölgeleme efekti */
+}
+
+/* Kapatma butonu */
+.close-btn {
+  background-color: #f44336; /* Kırmızı arka plan */
+  color: white;               /* Beyaz yazı */
+  border: none;               /* Kenarlık yok */
+  padding: 10px 20px;         /* İç boşluk */
+  font-size: 16px;            /* Yazı boyutu */
+  cursor: pointer;           /* Fare üzerine geldiğinde pointer işareti */
+  border-radius: 5px;         /* Yuvarlatılmış kenarlar */
+  transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;  /* Hover efekti ile koyu kırmızı */
+}
