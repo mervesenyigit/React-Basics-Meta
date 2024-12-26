@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.main-nav.light {
+  background-color: white;
+  color: black;
+}
+
+.main-nav.dark {
+  background-color: black;
+  color: white;
+}
