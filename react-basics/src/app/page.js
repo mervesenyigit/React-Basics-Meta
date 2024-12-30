@@ -8,6 +8,7 @@ import MyModal from './../components/MyModal';
 import ProductCard from '../components/ProductCard.js';
 import ToggleComponent from '../components/ToggleComponent.js';
 import HamburgerMenu from '../components/HamburgerMenu.js';
+import InputComponent from '../components/InputComponent.js';
 
 import { useState } from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -84,7 +85,7 @@ export default function Home() {
    <ToggleComponent />
 
   <HamburgerMenu />
-
+  <InputComponent />
 
       {/* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <h1>{title}</h1>
